@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PH Travel</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +17,7 @@
 </head>
 <body>
     
-  <div class="">
+  <div class="" id="main">
     <section class="head-ban-off w-10/12 mx-auto mb-[6rem]"> <!-- header banner offer section start -->
 
         <header class="header-section font-raleway mt-3">  <!-- header section start -->
@@ -186,7 +186,7 @@
             </div>
             <div>  
               <a class="btn text-lg bg-[#1dd10019] border border-solid border-[#1dd10066] text-[#1dd100]"> <img src="./images/seat-green.png" alt="" srcset="">
-                <p>40 Seats left</p> <!-- Avalaible Left seats-->
+                <p id="left-seat">40 Seats left</p> <!-- Avalaible Left seats-->
               </a>
             </div>
 
@@ -270,112 +270,112 @@
             <div class="flex justify-between my-7"> <!-- A -->
               <div class="flex gap-5">
                 <p class="mt-3">A</p>
-                <button class="btn"><p class="mx-7">A1</p></button>
-                <button class="btn"><p class="mx-7">A2</p></button>
+                <button class="btn" id="A1" onclick="getPrice('A1')"><p class="mx-7" >A1</p></button>
+                <button class="btn" id="A2" onclick="getPrice('A2')"><p class="mx-7">A2</p></button>
               </div>
               <div class="flex gap-10">
-                <button class="btn"><p class="mx-7">A3</p></button>
-                <button class="btn"><p class="mx-7">A4</p></button>
+                <button class="btn" id="A3" onclick="getPrice('A3')"><p class="mx-7" >A3</p></button>
+                <button class="btn" id="A4" onclick="getPrice('A4')"><p class="mx-7" >A4</p></button>
               </div>
             </div>
             <div class="flex justify-between my-7"> <!-- B -->
               <div class="flex gap-5">
                 <p class="mt-3">B</p>
-                <button class="btn"><p class="mx-7">B1</p></button>
-                <button class="btn"><p class="mx-7">B2</p></button>
+                <button class="btn" id="B1" onclick="getPrice('B1')"><p class="mx-7" >B1</p></button>
+                <button class="btn" id="B2" onclick="getPrice('B2')"><p class="mx-7" >B2</p></button>
               </div>
               <div class="flex gap-10">
-                <button class="btn"><p class="mx-7">B3</p></button>
-                <button class="btn"><p class="mx-7">B4</p></button>
+                <button class="btn" id="B3" onclick="getPrice('B3')"><p class="mx-7" >B3</p></button>
+                <button class="btn" id="B4" onclick="getPrice('B4')"><p class="mx-7" >B4</p></button>
               </div>
             </div>
             <div class="flex justify-between my-7"> <!-- C -->
               <div class="flex gap-5">
                 <p class="mt-3">C</p>
-                <button class="btn"><p class="mx-7">C1</p></button>
-                <button class="btn"><p class="mx-7">C2</p></button>
+                <button class="btn" id="C1" onclick="getPrice('C1')"><p class="mx-7" >C1</p></button>
+                <button class="btn" id="C2" onclick="getPrice('C2')"><p class="mx-7" >C2</p></button>
               </div>
               <div class="flex gap-10">
-                <button class="btn"><p class="mx-7">C3</p></button>
-                <button class="btn"><p class="mx-7">C4</p></button>
+                <button class="btn" id="C3" onclick="getPrice('C3')"><p class="mx-7" >C3</p></button>
+                <button class="btn" id="C4" onclick="getPrice('C4')"><p class="mx-7" >C4</p></button>
               </div>
             </div>
             <div class="flex justify-between my-7"> <!-- D -->
               <div class="flex gap-5">
                 <p class="mt-3">D</p>
-                <button class="btn"><p class="mx-7">D1</p></button>
-                <button class="btn"><p class="mx-7">D2</p></button>
+                <button class="btn" id="D1" onclick="getPrice('D1')"><p class="mx-7" >D1</p></button>
+                <button class="btn" id="D2" onclick="getPrice('D2')"><p class="mx-7" >D2</p></button>
               </div>
               <div class="flex gap-10">
-                <button class="btn"><p class="mx-7">D3</p></button>
-                <button class="btn"><p class="mx-7">D4</p></button>
+                <button class="btn" id="D3" onclick="getPrice('D3')"><p class="mx-7" >D3</p></button>
+                <button class="btn" id="D4" onclick="getPrice('D4')"><p class="mx-7" >D4</p></button>
               </div>
             </div>
             <div class="flex justify-between my-7"> <!-- E -->
               <div class="flex gap-5">
                 <p class="mt-3">E</p>
-                <button class="btn"><p class="mx-7">E1</p></button>
-                <button class="btn"><p class="mx-7">E2</p></button>
+                <button class="btn" id="E1" onclick="getPrice('E1')"><p class="mx-8">E1</p></button>
+                <button class="btn" id="E2" onclick="getPrice('E2')"><p class="mx-7">E2</p></button>
               </div>
               <div class="flex gap-10">
-                <button class="btn"><p class="mx-7">E3</p></button>
-                <button class="btn"><p class="mx-7">E4</p></button>
+                <button class="btn" id="E3" onclick="getPrice('E3')"><p class="mx-7">E3</p></button>
+                <button class="btn" id="E4" onclick="getPrice('E4')"><p class="mx-7">E4</p></button>
               </div>
             </div>
             <div class="flex justify-between my-7"> <!-- F -->
               <div class="flex gap-5">
                 <p class="mt-3">F</p>
-                <button class="btn"><p class="mx-7">F1</p></button>
-                <button class="btn"><p class="mx-7">F2</p></button>
+                <button class="btn" id="F1" onclick="getPrice('F1')"><p class="mx-8" >F1</p></button>
+                <button class="btn" id="F2" onclick="getPrice('F2')"><p class="mx-7" >F2</p></button>
               </div>
               <div class="flex gap-10">
-                <button class="btn"><p class="mx-7">F3</p></button>
-                <button class="btn"><p class="mx-7">F4</p></button>
+                <button class="btn" id="F3" onclick="getPrice('F3')"><p class="mx-7" >F3</p></button>
+                <button class="btn" id="F4" onclick="getPrice('F4')"><p class="mx-7" >F4</p></button>
               </div>
             </div>
             <div class="flex justify-between my-7"> <!-- G -->
               <div class="flex gap-5">
                 <p class="mt-3">G</p>
-                <button class="btn"><p class="mx-7">G1</p></button>
-                <button class="btn"><p class="mx-7">G2</p></button>
+                <button class="btn" id="G1" onclick="getPrice('G1')"><p class="mx-7" >G1</p></button>
+                <button class="btn" id="G2" onclick="getPrice('G2')"><p class="mx-7" >G2</p></button>
               </div>
               <div class="flex gap-10">
-                <button class="btn"><p class="mx-7">G3</p></button>
-                <button class="btn"><p class="mx-7">G4</p></button>
+                <button class="btn" id="G3" onclick="getPrice('G3')"><p class="mx-7" >G3</p></button>
+                <button class="btn" id="G4" onclick="getPrice('G4')"><p class="mx-7" >G4</p></button>
               </div>
             </div>
 
             <div class="flex justify-between my-7"> <!-- H -->
               <div class="flex gap-5">
                 <p class="mt-3">H</p>
-                <button class="btn"><p class="mx-7">H</p></button>
-                <button class="btn"><p class="mx-7">H2</p></button>
+                <button class="btn" id="H1" onclick="getPrice('H1')"><p class="mx-7" >H1</p></button>
+                <button class="btn" id="H2" onclick="getPrice('H2')"><p class="mx-7" >H2</p></button>
               </div>
               <div class="flex gap-10">
-                <button class="btn"><p class="mx-7">H3</p></button>
-                <button class="btn"><p class="mx-7">H4</p></button>
+                <button class="btn" id="H3" onclick="getPrice('H3')"><p class="mx-7" >H3</p></button>
+                <button class="btn" id="H4" onclick="getPrice('H4')"><p class="mx-7 " >H4</p></button>
               </div>
             </div>
             <div class="flex justify-between my-7"> <!-- I -->
               <div class="flex gap-5">
                 <p class="mt-3">I</p>
-                <button class="btn"><p class="mx-7">I1</p></button>
-                <button class="btn"><p class="mx-7">I2</p></button>
+                <button class="btn" id="I1" onclick="getPrice('I1')"><p class="mx-8" >I1</p></button>
+                <button class="btn" id="I2" onclick="getPrice('I2')"><p class="mx-8" >I2</p></button>
               </div>
               <div class="flex gap-10">
-                <button class="btn"><p class="mx-7">I3</p></button>
-                <button class="btn"><p class="mx-7">I4</p></button>
+                <button class="btn" id="I3" onclick="getPrice('I3')"><p class="mx-8" >I3</p></button>
+                <button class="btn" id="I4" onclick="getPrice('I4')"><p class="mx-8" >I4</p></button>
               </div>
             </div>
             <div class="flex justify-between my-7"> <!-- J -->
               <div class="flex gap-5">
                 <p class="mt-3">J</p>
-                <button class="btn"><p class="mx-7">J1</p></button>
-                <button class="btn"><p class="mx-7">J2</p></button>
+                <button class="btn" id="J1" onclick="getPrice('J1')"><p class="mx-8" >J1</p></button>
+                <button class="btn" id="J2" onclick="getPrice('J2')"><p class="mx-8" >J2</p></button>
               </div>
               <div class="flex gap-10">
-                <button class="btn"><p class="mx-7">J3</p></button>
-                <button class="btn"><p class="mx-7">J4</p></button>
+                <button class="btn"  id="J3" onclick="getPrice('J3')"><p class="mx-8"  >J3</p></button>
+                <button class="btn" id="J4" onclick="getPrice('J4')"><p class="mx-8" >J4</p></button>
               </div>
             </div>
             
@@ -390,26 +390,26 @@
 
           <div class="bg-[#f7f8f8] rounded-md p-5 mr-10">  <!-- Price  Start -->
 
-            <h1 class="font-inter font-medium text-base border-b-2 border-dashed pb-3 pt-7">Seat <sup class="bg-[#1dd100] px-2 rounded-md text-white mb-7">0</sup> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Class &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price</h1>
+            <h1 class="font-inter font-medium text-base border-b-2 border-dashed pb-3 pt-7">Seat <sup class="bg-[#1dd100] px-2 rounded-md text-white mb-7" id="book-seat"><span id="book-seat">0</span></sup> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Class &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price</h1>
 
-           <div class="mt-5 mb-2"> <!-- Append  Start -->
-              hello
+           <div class="mt-5 mb-2" id="add-pro"> <!-- Append  Start -->
+              
            </div>
 
-           <div> <!--  Total price Start -->
+           <div id="dis-price"> <!--  Total price Start -->
 
-            <h1 class="font-inter font-medium text-base border-t-2 border-solid pt-1">Total Price &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BDT <span>0</span></h1>
+            <h1 class="font-inter font-medium text-base border-t-2 border-solid pt-1">Total Price &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BDT <span id="total-price">0</span></h1>
 
            </div > 
               
-           <div class=" mt-5"> <!--  Cupon Start -->
-            <input type="text" placeholder="Have any coupon" class="input w-full max-w-xs" />
-            <button class="bg-[#1dd100] font-inter font-semibold text-base text-white py-2 px-4 rounded-md relative top-[-44px] right-[-210px]" >Apply</button>
+           <div class=" mt-5" id="haowa"> <!--  Cupon Start -->
+            <input type="text" placeholder="Have any coupon" class="input w-full max-w-xs" id="cup"/>
+            <button class="bg-[#1dd100] font-inter font-semibold text-base text-white py-2 px-4 rounded-md relative top-[-44px] right-[-210px]" onclick="cupon()" >Apply</button>
            </div>
 
            <div> <!--  Grand Total Start -->
 
-            <h1 class="font-inter font-medium text-base mt-[-20px]">Grand Total &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BDT <span>0</span></h1>
+            <h1 class="font-inter font-medium text-base mt-[10px]" >Grand Total &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BDT <span id="grand">0</span></h1>
 
            </div>
 
@@ -427,7 +427,7 @@
               <div class="label">
                 <span class="label-text font-semibold text-base font-inter text-[#030712]">Phone Number*</span>
               </div>
-              <input type="text" placeholder="Enter your phone number" class="input input-bordered w-full max-w-xs" />
+              <input id="phone" type="text" placeholder="Enter your phone number" class="input input-bordered w-full max-w-xs" />
               
             </label>
             <label class="form-control w-full max-w-xs mb-7">
@@ -437,7 +437,7 @@
               <input type="text" placeholder="Enter your email id" class="input input-bordered w-full max-w-xs" />
               
             </label>
-            <button class="  bg-[#1dd100] rounded-md "><p class="w-[320px] my-2 text-white font-bold font text-lg">Next</p></button>  <!--  Next button -->
+            <button class="  bg-[#1dd100] rounded-md " id="next-button"><p class="w-[320px] my-2 text-white font-bold font text-lg" onclick="next()">Next</p></button>  <!--  Next button -->
           </div>
 
           <div class="flex mt-5 ml-2 gap-8 font-inter">
@@ -470,7 +470,7 @@
   </div>
 <!-- ------------------------------------------------------------------------------- -->
   
-    <div class="hidden">
+    <div class="hidden" id="suc">
 
       <div class="suc h-[100vh] border-2 flex justify-center items-center ">
     
@@ -481,7 +481,7 @@
             <p class="mb-5 text-green-500 font-bold">SUCCESS</p>
             <p class="text-center mb-5 font-semibold text-lg">Thank you for Booking Our Bus Seats. We are working hard to find the best service and deals for you. </p>
             <p class="mb-5 font-extralight font-base">Shortly you will find a confirmation in your email.</p>
-            <button class="btn bg-green-600"><p class="text-white w-36">Continue</p></button>
+            <button class="btn bg-green-600" id="conti" onclick="con()"><p class="text-white w-36">Continue</p></button>
           </div>
     
         </div>

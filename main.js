@@ -23,7 +23,7 @@ function getPrice(id){
         
         if(ar.length<4){
             click=1
-            console.log(click);
+            
             ar.push(id)
             let element=document.getElementById(id)
             element.style.backgroundColor='Green'
@@ -74,7 +74,7 @@ let total=0
 function priceSum(){
 
     total=total+550
-    console.log(total);
+    
 
     let totalPrice=document.getElementById('total-price')
     totalPrice.innerText=`${total}`
@@ -88,7 +88,7 @@ function priceSum(){
 function cupon(){
     let getCupon=document.getElementById("cup")
     if(getCupon.value==='NEW15' && book===4){
-        console.log(book);
+        
         let dis=(15/100)*total
         let disPrice=document.getElementById("dis-price")
         let appdisPrice=document.createElement('p')

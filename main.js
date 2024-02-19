@@ -3,16 +3,27 @@
 let left=40
 let book=0
 let ar=[]
+let click=0
+let cupApp=document.getElementById("cupapp")
+cupApp.disabled=true
+let ne=document.getElementById("next-button")
+ne.disabled=true
+
+
 function getPrice(id){
+
+    
 
     if(ar.includes(id)){
        
-        
+        alert("you can't select it again.")
     }
     
     else{
         
         if(ar.length<4){
+            click=1
+            console.log(click);
             ar.push(id)
             let element=document.getElementById(id)
             element.style.backgroundColor='Green'
@@ -29,9 +40,33 @@ function getPrice(id){
             addPro.append(newpro)
             priceSum()
             
+
+            if(book===4){
+                cupApp.disabled=false
+            }
+            
+            let phone=document.getElementById('phone')
+            phone.addEventListener("keyup",function (){
+                console.log(phone.value);
+                if(click===1 && phone.value.length>0){
+                ne.disabled=false
+            }
+                
+            })
+
+
+            
         }
     }
     
+}
+
+
+let phone=document.getElementById('phone')
+console.log(phone.value.length);
+if(left>36 && phone.value.length>0){
+    console.log(click,'h');
+    ne.disabled=false
 }
 
 
@@ -49,9 +84,11 @@ function priceSum(){
 }
 
 
+
 function cupon(){
     let getCupon=document.getElementById("cup")
     if(getCupon.value==='NEW15' && book===4){
+        console.log(book);
         let dis=(15/100)*total
         let disPrice=document.getElementById("dis-price")
         let appdisPrice=document.createElement('p')
@@ -77,30 +114,17 @@ function cupon(){
 
     else{
 
-        getCupon.value=''
+        
         alert("Enter valid coupon")
         
     }
 }
-
-
-// let nextButton=document.getElementById('next-button')
-// nextButton.disabled=false
-// let phone=document.getElementById('phone')
-// console.log(phone.value);
-// if(left>36 && phone.value!==''){
-//     nextButton.disabled=false
-// }
 
 function next(){
     let nextButton=document.getElementById('main')
     nextButton.classList.add('hidden')
     let success=document.getElementById('suc')
     success.classList.remove('hidden')
-
-
-
-
 }
 
 function con(){
@@ -108,4 +132,5 @@ function con(){
     main.classList.remove('hidden')
     let success=document.getElementById('suc')
     success.classList.add('hidden')
+    
 }

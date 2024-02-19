@@ -58,7 +58,7 @@
                     <h1 class="mb-5 text-5xl font-extrabold font-raleway text-white">End-to-End Travel With</h1>
                     <h1 class="mb-5 text-5xl font-extrabold font-raleway co-green">PH Paribahan</h1>
                     <p class="mb-5 text-center text-white text-base font-normal">One of the most appreciated features of online bus ticket booking is the ability to choose your own seat.</p>
-                    <button class="btn bg-[#1dd100] border-none font-raleway font-bold"><a href="#buy-ticket">Buy Ticket</a></button>
+                    <a href="#buy-ticket"><button class="btn bg-[#1dd100] border-none font-raleway font-bold">Buy Ticket</button></a>
                   </div>
                 </div>
               </div>
@@ -404,7 +404,7 @@
               
            <div class=" mt-5" id="haowa"> <!--  Cupon Start -->
             <input type="text" placeholder="Have any coupon" class="input w-full max-w-xs" id="cup"/>
-            <button class="bg-[#1dd100] font-inter font-semibold text-base text-white py-2 px-4 rounded-md relative top-[-44px] right-[-210px]" onclick="cupon()" >Apply</button>
+            <button class="bg-[#1dd100] font-inter font-semibold text-base text-white py-2 px-4 rounded-md relative top-[-44px] right-[-210px]" onclick="cupon()" id="cupapp" >Apply</button>
            </div>
 
            <div> <!--  Grand Total Start -->
@@ -427,7 +427,7 @@
               <div class="label">
                 <span class="label-text font-semibold text-base font-inter text-[#030712]">Phone Number*</span>
               </div>
-              <input id="phone" type="text" placeholder="Enter your phone number" class="input input-bordered w-full max-w-xs" />
+              <input id="phone" type="tel" placeholder="Enter your phone number" class="input input-bordered w-full max-w-xs" />
               
             </label>
             <label class="form-control w-full max-w-xs mb-7">
@@ -437,7 +437,7 @@
               <input type="text" placeholder="Enter your email id" class="input input-bordered w-full max-w-xs" />
               
             </label>
-            <button class="  bg-[#1dd100] rounded-md " id="next-button"><p class="w-[320px] my-2 text-white font-bold font text-lg" onclick="next()">Next</p></button>  <!--  Next button -->
+            <button class="  bg-[#1dd100] rounded-md " id="next-button" onclick="next()"><p class="w-[320px] my-2 text-white font-bold font text-lg" >Next</p></button>  <!--  Next button -->
           </div>
 
           <div class="flex mt-5 ml-2 gap-8 font-inter">

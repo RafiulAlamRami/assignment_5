@@ -1,0 +1,18 @@
+
+
+.font-inter{
+    font-family: "Inter", sans-serif;
+}
+
+.font-raleway{
+    font-family: "Raleway", sans-serif;
+}
+
+
+.co-green{
+    color: rgb(29, 209, 0);
+}
+
+.bo{
+    border-bottom: 2px solid rgb(29, 209, 0);
+}

@@ -47,9 +47,11 @@ function getPrice(id){
             
             let phone=document.getElementById('phone')
             phone.addEventListener("keyup",function (){
+                let val=phone.value
                 
-                if(click===1 && phone.value.length>0 && parseInt(phone.value)==='number'){
+                if(click===1 && val.length>0){
                 ne.disabled=false
+                
             }
                 
             })
